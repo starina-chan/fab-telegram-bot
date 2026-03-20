@@ -70,7 +70,7 @@ async def find_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 def main():
-    print("Starting bot...")
+    print("[bot.main.main] Starting bot...")
     app = ApplicationBuilder().token(TOKEN).build()
 
     # Commands
@@ -81,7 +81,7 @@ def main():
     app.add_handler(MessageHandler(filters.TEXT, handle_message))
 
     # Polling
-    print("Polling...")
+    print("[bot.main.main] Polling...")
     app.run_polling()
 
 
